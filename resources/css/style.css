@@ -1,6 +1,5 @@
-html, body {
+body {
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -8,12 +7,142 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  align-items: center;
+  border: solid 1px;
+  padding: 10px 0;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.logo span {
+  padding-left: 10px;
+  color: aquamarine;
+}
+
+nav {
+  padding-right: 40px;
+}
+
+nav span {
+  padding: 20px 10px;
+  display: inline-block;
+  color: black;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid 1px blue;
+  width: 1232px;
+  height: 1231px;
 }
 
-.nav {
-  display:inline-flex;
+.container .lead-story {
+  width: 630px;
+  height: 533px;
+  background-color: red;
 }
+
+.lead-story .image-content {
+  width: 630px;
+  height: 300px;
+  background-color: green;
+}
+
+.lead-story .narrative {
+  width: 630px;
+  height: 200px;
+  background-color: pink;
+  margin: 16px 0 17px 0;
+}
+
+.container .stories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 630px;
+  height: 565px;
+  background-color: yellow;
+  justify-content: space-between;
+}
+
+.story {
+  width: 300px;
+  height: 565px;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.story .text-content {
+  width: 300px;
+  height: 250px;
+  background-color: grey;
+}
+
+.image-content {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  margin-top: 15px;
+}
+
+.text-content {
+  width: 300px;
+  height: 438px;
+  background-color: pink;
+  border: solid 1px black;
+}
+
+.story {
+  width: 300px;
+  height: 548px;
+  background-color: black;
+}
+
+.story .narrative {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+}
+
+.cookie {
+  width: 240px;
+  height: 240px;
+  background-color: pink;
+}
+
+.news-bites {
+  width: 240px;
+  height: 349px;
+  background-color: green;
+}
+
+footer {
+  width: 1072px;
+  height: 325px;
+  background-color: black;
+}
+
+
+
+
+/* .text_box {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.img_box {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: solid 2px black;
+} */
