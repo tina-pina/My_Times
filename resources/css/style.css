@@ -10,6 +10,7 @@ header {
   align-items: center;
   border: solid 1px;
   padding: 10px 0;
+  width: 100%;
 }
 
 
@@ -32,14 +33,13 @@ nav {
 nav span {
   padding: 20px 10px;
   display: inline-block;
-  color: black;
+  /* color: black; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: solid 1px blue;
   width: 1232px;
   height: 1231px;
 }
@@ -47,19 +47,19 @@ nav span {
 .container .lead-story {
   width: 630px;
   height: 533px;
-  background-color: red;
+  /* background-color: white; */
 }
 
 .lead-story .image-content {
   width: 630px;
   height: 300px;
-  background-color: green;
+  /* background-color: white; */
 }
 
 .lead-story .narrative {
   width: 630px;
   height: 200px;
-  background-color: pink;
+  /* background-color: white; */
   margin: 16px 0 17px 0;
 }
 
@@ -69,41 +69,83 @@ nav span {
   flex-wrap: wrap;
   width: 630px;
   height: 565px;
-  background-color: yellow;
+  /* background-color: white; */
   justify-content: space-between;
 }
 
 .story {
   width: 300px;
   height: 565px;
-  background-color: white;
-  border: solid 2px black;
 }
 
 .story .text-content {
   width: 300px;
   height: 250px;
-  background-color: grey;
 }
 
-.image-content {
+.image-content1 {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img-story-main.png");
+  width: 630px;
+  height: 300px;
+  margin-top: 15px;
+  font-size: 40px;
+  font-family: Georgia;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+
+p .narrative.text-item {
+  margin: 16 0 17 0;
+}
+
+.story h2 {
+  font-size: 30px;
+  font-family: Georgia;
+}
+
+.image-content1 p {
+  margin-left: 20px;
+}
+
+.square-img {
+  display: flex;
   width: 300px;
   height: 300px;
-  background-color: green;
   margin-top: 15px;
+  font-size: 30px;
+  font-family: Georgia;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
+
+.image-content2 {
+  background-image: url("./fallseason.png");
+}
+
+.image-content3 {
+  background-image: url("./hypster-cameraman.png");
+}
+
+.image-content4 {
+  background-image: url("./cat.png");
 }
 
 .text-content {
   width: 300px;
   height: 438px;
-  background-color: pink;
-  border: solid 1px black;
+  /* background-color: pink; */
+  /* border: solid 1px black; */
 }
 
 .story {
   width: 300px;
   height: 548px;
-  background-color: black;
+  background-color: white;
 }
 
 .story .narrative {
@@ -115,7 +157,7 @@ nav span {
 .cookie {
   width: 240px;
   height: 240px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .news-bites {
@@ -124,11 +166,18 @@ nav span {
   background-color: green;
 }
 
+.column {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 footer {
   background-color: mediumaquamarine;
 
   display: flex;
-  width: 1072px;
+  width: 100%;
   height: 325px;
   color: white;
   align-items: center;
@@ -159,5 +208,11 @@ footer nav a {
 .copy {
   font-family: Verdana;
   font-size: 12px;
+  color: black;
+}
+
+.text-item {
+  font-family: Georgia;
+  font-size: 17px;
   color: black;
 }
