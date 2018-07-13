@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  /* margin-top: 0 auto; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
@@ -9,40 +11,71 @@ header {
   font-weight: bold;
   align-items: center;
   border: solid 1px;
-  padding: 10px 0;
+  padding right: 40px;
   width: 100%;
+  padding: 2px;
+  z-index: 8;
+  height: 80px;
+  margin-bottom: 78px;
+  margin-right: 215px;
+  position: fixed;
+  background-color: white;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
-
 .logo {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
   padding-left: 30px;
+  flex-grow: 1;
+  padding-top: 30px;
 }
 
 .logo span {
   padding-left: 10px;
   color: aquamarine;
+  /* flex-grow: 5; */
+
+  display: inline-block;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
-nav {
-  padding-right: 40px;
+.nav {
+  padding-left: 40px;
 }
 
-nav span {
+nav.span {
+  display: flex;
   padding: 20px 10px;
   display: inline-block;
-  /* color: black; */
+  color: black;
+  justify-content: right;
 }
 
+/* nav {
+  display: flex;
+  padding: 20px 10px;
+  display: inline-block;
+  color: black;
+  justify-content: right;
+} */
+
 .container {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 1232px;
-  height: 1231px;
+  height: 1115px;
+  overflow: scroll;
 }
+
+.column .text-content {
+  padding-left: 15px;
+}
+
 
 .container .lead-story {
   width: 630px;
@@ -60,8 +93,9 @@ nav span {
   width: 630px;
   height: 200px;
   /* background-color: white; */
-  margin: 16px 0 17px 0;
+  margin: 16px 0px 17px 0;
 }
+
 
 .container .stories {
   display: flex;
@@ -77,6 +111,7 @@ nav span {
   width: 300px;
   height: 565px;
 }
+
 
 .story .text-content {
   width: 300px;
@@ -98,17 +133,24 @@ nav span {
 }
 
 p .narrative.text-item {
-  margin: 16 0 17 0;
+  margin-left: 20px;
 }
 
+.story .narrative.text-item2 {
+  margin-left: 20px;
+}
+
+_
 .story h2 {
   font-size: 30px;
   font-family: Georgia;
+  text-align: left;
 }
 
-.image-content1 p {
-  margin-left: 20px;
+.lead-story {
+  flex-grow: 2;
 }
+
 
 .square-img {
   display: flex;
@@ -133,14 +175,30 @@ p .narrative.text-item {
 
 .image-content4 {
   background-image: url("./cat.png");
+  margin-left: 20px;
 }
 
 .text-content {
+  /* margin-left: 20px; */
   width: 300px;
   height: 438px;
   /* background-color: pink; */
   /* border: solid 1px black; */
 }
+
+.text-content1 h2 {
+  margin-left: 20px;
+  align-items: center;
+}
+
+.text-content h2 {
+  font-size: 30px;
+  font-family: Georgia;
+}
+/* .text-content3 {
+  margin-left: 20px;
+} */
+
 
 .story {
   width: 300px;
@@ -155,29 +213,52 @@ p .narrative.text-item {
 }
 
 .cookie {
+  margin: 0;
   width: 240px;
   height: 240px;
   /* background-color: pink; */
+  flex-shrink: 1;
 }
 
 .news-bites {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
   width: 240px;
   height: 349px;
-  background-color: green;
+  background-color: white;
+  flex-direction: column;
+  paddling: 0px;
+  flex-wrap: nowrap;
+}
+
+.news-bites h3 {
+  font-family: Georgia;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin-left: 16px 41px;
+}
+
+.news-bites span{
+  padding: 11px 20px 11px 20px;
+  background-color: whitesmoke;
+  border-bottom: black solid 1px;
 }
 
 .column {
   display: flex;
   height: 100%;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  align-items: flex-start;
+  text-align: justify;
 }
 
 footer {
   background-color: mediumaquamarine;
-
   display: flex;
-  width: 100%;
+  width: 969px;
   height: 325px;
   color: white;
   align-items: center;
